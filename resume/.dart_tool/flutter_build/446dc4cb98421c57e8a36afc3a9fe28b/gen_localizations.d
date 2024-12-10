@@ -1,0 +1,1 @@
+ C:\\Apps\\resume\\resume\\resume\\.dart_tool\\flutter_gen\\gen_l10n\\app_localizations_en.dart C:\\Apps\\resume\\resume\\resume\\.dart_tool\\flutter_gen\\gen_l10n\\app_localizations.dart:  C:\\Apps\\resume\\resume\\resume\\l10n.yaml C:\\Apps\\resume\\resume\\resume\\lib/src/localization\\app_en.arb
