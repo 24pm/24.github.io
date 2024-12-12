@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:resume/src/widget/content_widget.dart';
 import 'package:resume/src/widget/profile_widget.dart';
 
