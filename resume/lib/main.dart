@@ -1,6 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:resume/src/utils/responsive_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,12 +15,19 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
-        title: 'Namer App',
+        title: 'Rama Profile',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Color(0xffff00c3),
+            primary: Color(0xffff00c3),
+            secondary: Color(0xffa42dab),
+            background: Color.fromARGB(255, 240, 240, 240),
+            surfaceVariant: Color(0xffff00c3),
+            
+            ),
         ),
-        home: MyHomePage(),
+        home: ResponsiveWidget(),
       ),
     );
   }
@@ -27,20 +35,4 @@ class MyApp extends StatelessWidget {
 
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-
-    return Scaffold(
-      body: Column(
-        children: [
-          Text('A random idea:'),
-          Text(appState.current.asLowerCase),
-        ],
-      ),
-    );
-  }
 }
